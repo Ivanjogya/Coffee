@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .background {
+        background-image: url(https://i.pinimg.com/564x/96/b8/0f/96b80f7b74a5c201a9f342a70e32bf1c.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .eader {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 20px;
+        padding-right: 20px;
+    }
+
+    .nav ul li {
+        padding: 20px;
+    }
+
+    .nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .flex{
+        display: flex;
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .logo {
+        margin-left: 30px;
+        height: 250px;
+        padding-left: 40px;
+    }
+        .menu {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .coffee-order {
+            display: grid;
+            margin-top: 0px;
+            margin-left: 700px;
+            color: white;
+        }
+        .coffee-order h1 {
+            font-size: 40px;
+        }
+        .coffee-order p {
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .button2 {
+            margin-top: 10px;
+            margin-left: 210px;
+            width: 10em;
+            position: relative;
+            height: 3em;
+            border: 3px ridge rgb(28, 170, 202);
+            outline: none;
+            background-color: transparent;
+            color: white;
+            transition: 1s;
+            border-radius: 0.3em;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .button2::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 3%;
+            width: 95%;
+            height: 40%;
+            background-color: #212121;
+            transition: 2s;
+            transform-origin: center;
+        }
+        .slider {
+            margin-left: 150px;
+            display: grid;
+            width: 40%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+        }
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <header class="header">
+            <nav class="nav">
+                <div class="eader">
+                    <img class="logo"
+                        src="https://cdn.squaresigns.com/images/templates/thumb/big/cafe-free-wifi-logo-all-in-black-and-white.png"
+                        height="150px">
+                    <ul>
+                        <div class="flex nav-mid">
+                            <li><a href="/"> Нүүр хуудас </a></li>
+                            <li><a href="#">Танилцуулга</a></li>
+                            <li><a href="#">Брэнд</a></li>
+                            <li><a href="#">Бүтээгдэхүүн</a></li>
+                            <li><a href="Location.html">Байршил</a></li>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Heart_empty_font_awesome.svg"
+                                    alt="" class="menu">
+                            </div>
+                            <div>
+                                <img class="menu"
+                                    src="https://i3.wp.com/static-00.iconduck.com/assets.00/magnifying-glass-icon-2048x2048-3qmsqqer.png">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="coffee-order">
+            <h1>Захиалах кофегоо сонгоно уу.</h1>
+            <p>Хажуу тал рүү гүйлгэж захиалах кофегоо дээр нь товшин сонгоно уу.</p>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/coffee/Americano.jpg"
+                            alt="Americano">
+                    </div>
+                    <div class="slide">
+                        <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/sub/sub03_menu04.jpg"
+                            alt="Latte">
+                    </div>
+                    <div class="slide">
+                        <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/coffee/Espresso.jpg"
+                            alt="Espresso">
+                    </div>
+                    <div class="slide">
+                        <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/coffee/EspressoConPanna.jpg"
+                            alt="EspressoConPanna">
+                    </div>
+                    <div class="slide">
+                        <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/coffee/Cappuccino.jpg"
+                            alt="Cappuccino">
+                    </div>
+                </div>
+                <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+                <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <button class="button2" onclick="submitOrder()">Захиалах</button>
+        </section>
+    </div>
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        let counter = 1;
+        const size = slide[0].clientWidth;
+
+        function nextSlide() {
+            if (counter >= slide.length - 1) return;
+            slides.style.transition = "transform 0.5s ease-in-out";
+            counter++;
+            console.log(counter);
+            slides.style.transform = translateX(${-size * counter}px);
+        }
+        function prevSlide() {
+            if (counter = 0){
+                slides.style.transition = "transform 0.5s ease-in-out";
+                counter--;
+                console.log(counter);
+                slides.style.transform = translateX(${-size * counter}px);
+            }
+        }
+        function submitOrder() {
+            var selectedCoffeeName = document.querySelector(.slide:nth-child(${counter})).querySelector("img").getAttribute('alt');
+            alert(Та ${selectedCoffeeName} захиаллаа. Таньд баярлалаа.);
+        }
+    </script>
+</body>
+</html>

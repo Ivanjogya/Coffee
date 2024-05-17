@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .background {
+        background-image: url(https://i.pinimg.com/564x/96/b8/0f/96b80f7b74a5c201a9f342a70e32bf1c.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .eader {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    .nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 20px;
+        padding-right: 20px;
+    }
+    .nav ul li {
+        padding: 20px;
+    }
+    .nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .flex {
+        display: flex;
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .logo {
+        margin-left: 30px;
+        height: 250px;
+        padding-left: 40px;
+    }
+    .menu {
+        width: 40px;
+        height: 40px;
+        filter: brightness(0) invert(1);
+        margin-top: 10px;
+        padding: 5px;
+
+    }
+    .welcome {
+        color: aliceblue;
+        font-size: 50px;
+        display: grid;
+        place-content: center end;
+        padding-right: 5%;
+    }
+    .elcome {
+        color: aliceblue;
+        font-size: 15px;
+        display: grid;
+        place-content: center end;
+        padding-right: 5%;
+        padding-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .order {
+        color: aliceblue;
+        display: inline;
+        padding-left: 600px;
+    }
+    .explore {
+        color: aliceblue;
+        display: grid;
+        place-content: center end;
+        padding-right: 20%;
+    }
+    .click {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 700px;
+        margin-right: 100px;
+    }
+    .tab-button {
+        justify-content: space-between;
+    }
+    .tab {
+        display: none;
+        color: white;
+        margin-left: 650px;
+    }
+    .tab p {
+        width: 60%;
+    }
+    .tab h2{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .tab h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .mg {
+        width: 720px;
+        height: auto;
+    }
+    button {
+        width: 200px;
+        height: 50px;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 20px;
+        color: #131313;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 50px;
+        background-color: #fff;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+    button::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 70px;
+        background-color: #fff;
+        top: 50%;
+        transform: skewX(30deg) translate(-300%, -50%);
+        transition: all 0.5s;
+    }
+    button:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 4px 0 4px #0d3b66;
+    }
+
+    button:hover::before {
+        transform: skewX(30deg) translate(300%, -50%);
+        transition-delay: 0.1s;
+    }
+    .login p {
+        margin-left: 50px;
+        height: 5px;
+    }
+    #tab3{
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .submit{
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+    }
+</style>
+<body>
+    <div class="background">
+        <header class="header">
+            <nav class="nav">
+                <div class="eader">
+                    <img class="logo"
+                        src="https://cdn.squaresigns.com/images/templates/thumb/big/cafe-free-wifi-logo-all-in-black-and-white.png"
+                        height="150px">
+                    <ul>
+                        <div class="flex nav-mid">
+                            <li><a href="/"> Нүүр хуудас </a></li>
+                            <li><a href="#">Танилцуулга</a></li>
+                            <li><a href="#">Брэнд</a></li>
+                            <li><a href="#">Бүтээгдэхүүн</a></li>
+                            <li><a href="Location.html">Байршил</a></li>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Heart_empty_font_awesome.svg"
+                                    alt="" class="menu">
+                            </div>
+                            <div>
+                                <img class="menu"
+                                    src="https://i3.wp.com/static-00.iconduck.com/assets.00/magnifying-glass-icon-2048x2048-3qmsqqer.png">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="Buttons">
+            <div class="click"> 
+                <button class="tab-button" onclick="openTab1(event, 'tab1')">Бидний түүх</button>
+                <button class="tab-button" onclick="openTab1(event, 'tab2')">Бүтээгдэхүүн</button>
+                <button class="tab-button" onclick="openTab(event, 'tab3')">Холбогдох</button>
+            </div>
+            <div id="tab1" class="tab">
+                <h2>Uure`s cafe</h2>
+                <h4>Uure`s cafe нь кофены зах зээлийн хандлагыг тэргүүлэгч кофе шопын франчайз сүлжээ юм. Бид Европын
+                    уламжлалт кофе шопын дүр төрхийг бүрдүүлдэг ба үйлчлүүлэгчдэд кофе болон амтат идээгээрээ сэтгэл
+                    ханамжийг хамгийн энгийнээр хүргэхийг зорьдог. Их хотын завгүй амьдралыг мартан, амарч тайвшрахаар
+                    зорьж очих газар.</h4>
+                <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/sub/sub01_image01.jpg" alt=""
+                    class="mg">
+                <h2> Түүх </h2>
+                <h3>2020</h3>
+                <h4> - Улаанбаатараас гаднах эхний салбар Дархан хотод нээгдсэн. </h4>
+
+                <h3> 2023</h3>
+                <h4> - Uure`s cafe Roastery салбарыг Наадам центрт нээсэн. </h4>
+            </div>
+
+            <div id="tab2" class="tab">
+                <h2>Манай кофе</h2>
+                <h4> Uure`s cafe нь төгс борголыг тариан талбайгаас таны ширээнд хүргэх "Фермээс Ширээнд" системийг
+                    бүрдүүлсэн. Бразилийн хамгийн том борголын ферм болох ИПАНЕМА-тай байгуулсан нийлүүлэлтийн тусгай
+                    гэрээний дагуу Uure`s cafe өөрийн салбар бүрт нийлүүлэгддэг борголыг шууд хянадаг. Мөн Болив болон
+                    Папуа, Шинэ Гвинейгээс кофений борголоо шууд нийлүүлдэг нь үйлчлүүлэгчиддээ хамгийн сайн кофег
+                    шинэхэн, бас боломжийн үнээр хүргэх боломж олгодог.</h4>
+                <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/sub/sub02_image01.jpg" alt=""
+                    class="mg">
+            </div>
+            <div id="tab3" class="tab">
+                <button class="tab-button" id="btn1" onclick="openTab1(event, 'tab4')">Ажилд орох хүсэлт </button>
+                <button class="tab-button" id="btn2" onclick="openTab(event, 'tab5')">Ажлын шугамаар </button>
+            </div>
+            <div id="tab4" class="tab">
+                <form class="login" action="login" method="post">
+                    <h2 class="username">Таны овог нэр:</h2>
+                    <input type="text" id="username" name="username"><br>
+                    <h2 class="sex">Таны хүйс</h2>
+                    <input type="radio" id="sex" name="sex">Эрэгтэй
+                    <input type="radio" id="sex" name="sex">Эмэгтэй
+                    <input type="radio" id="sex" name="sex">Бусад
+                    <h2 class="age">Таны нас:</h2>
+                    <input type="text" id="age" name="age"><br>
+                    <h2 class="phone number">Утасны дугаар:</h2>
+                    <input type="number" id="phone number" name="phone number"><br>
+                    <h2 class="location">Гэрийн хаяг:</h2>
+                    <input type="text" id="location" name="location">
+                    <p><input class="submit" type="submit" value="Илгээх"></p>
+                </form>
+            </div>
+            <div id="tab5" class="tab">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "flex";
+        evt.currentTarget.className += " active";
+    }
+    function openTab1(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+</html>
